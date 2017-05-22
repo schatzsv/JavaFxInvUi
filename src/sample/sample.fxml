@@ -92,6 +92,10 @@
                             <cellValueFactory><PropertyValueFactory property="taxlot" />
                             </cellValueFactory>
                         </TableColumn>
+                        <TableColumn prefWidth="74.0" text="Tdate">
+                            <cellValueFactory><PropertyValueFactory property="tdate" />
+                            </cellValueFactory>
+                        </TableColumn>
                     </columns>
                 </TableView>
             </content>

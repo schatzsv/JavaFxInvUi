@@ -52,8 +52,9 @@ public class TableViewController implements Initializable {
                 }
                 String note = String.valueOf(rs.getString("Note"));
                 String taxlot = String.valueOf(rs.getString("Taxlot"));
+                String tdate = String.valueOf(rs.getString("Tdate"));
                 data.add(new Record(source, name, symbol, fundname, ttype, divrate,
-                        shares, shprice, tfee, tamt, note, taxlot));
+                        shares, shprice, tfee, tamt, note, taxlot, tdate));
             }
             rs.close();
             stmt.close();
@@ -76,7 +77,7 @@ public class TableViewController implements Initializable {
         int rowNum = data.size();
         for (int i = rowNum; i < rowNum + 100000; i++) {
             data.add(new Record("Added row", String.valueOf(i), "", "", "",
-                    "", "", "", "", "", "", ""));
+                    "", "", "", "", "", "", "", ""));
         }
     }
 

@@ -15,15 +15,16 @@ public class Record {
     private final SimpleStringProperty tamt = new SimpleStringProperty("");
     private final SimpleStringProperty note = new SimpleStringProperty("");
     private final SimpleStringProperty taxlot = new SimpleStringProperty("");
+    private final SimpleStringProperty tdate = new SimpleStringProperty("");
 
     public Record() {
         this("", "", "", "", "", "", "",
-             "", "", "", "", "");
+             "", "", "", "", "", "");
     }
 
     public Record(String source, String name, String symbol, String fundname, String ttype,
                   String divrate, String shares, String shprice, String tfee, String tamt,
-                  String note, String taxlot) {
+                  String note, String taxlot, String tdate) {
         setSource(source);
         setName(name);
         setSymbol(symbol);
@@ -36,6 +37,7 @@ public class Record {
         setTamt(tamt);
         setNote(note);
         setTaxlot(taxlot);
+        setTdate(tdate);
     }
 
     public String getSource() {
@@ -132,5 +134,13 @@ public class Record {
 
     public void setTaxlot(String v) {
         taxlot.set(v);
+    }
+
+    public String getTdate() {
+        return tdate.get();
+    }
+
+    public void setTdate(String v) {
+        tdate.set(v);
     }
 }
