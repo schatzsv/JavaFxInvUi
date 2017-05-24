@@ -48,7 +48,7 @@
                             <cellValueFactory><PropertyValueFactory property="source" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Name">
+                        <TableColumn prefWidth="125.0" text="Name">
                             <cellValueFactory><PropertyValueFactory property="name" />
                             </cellValueFactory>
                         </TableColumn>
@@ -56,11 +56,11 @@
                             <cellValueFactory><PropertyValueFactory property="symbol" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Fundname">
+                        <TableColumn prefWidth="175.0" text="Fundname">
                             <cellValueFactory><PropertyValueFactory property="fundname" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Ttype">
+                        <TableColumn prefWidth="175.0" text="Ttype">
                             <cellValueFactory><PropertyValueFactory property="ttype" />
                             </cellValueFactory>
                         </TableColumn>
@@ -72,7 +72,7 @@
                             <cellValueFactory><PropertyValueFactory property="shares" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Shprice">
+                        <TableColumn prefWidth="125.0" text="Shprice">
                             <cellValueFactory><PropertyValueFactory property="shprice" />
                             </cellValueFactory>
                         </TableColumn>
@@ -84,7 +84,7 @@
                             <cellValueFactory><PropertyValueFactory property="tamt" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Note">
+                        <TableColumn prefWidth="175.0" text="Note">
                             <cellValueFactory><PropertyValueFactory property="note" />
                             </cellValueFactory>
                         </TableColumn>
@@ -92,8 +92,24 @@
                             <cellValueFactory><PropertyValueFactory property="taxlot" />
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="74.0" text="Tdate">
+                        <TableColumn prefWidth="100.0" text="Tdate">
                             <cellValueFactory><PropertyValueFactory property="tdate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Exdate">
+                            <cellValueFactory><PropertyValueFactory property="exdate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Decdate">
+                            <cellValueFactory><PropertyValueFactory property="decdate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Recdate">
+                            <cellValueFactory><PropertyValueFactory property="recdate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Paydate">
+                            <cellValueFactory><PropertyValueFactory property="paydate" />
                             </cellValueFactory>
                         </TableColumn>
                     </columns>

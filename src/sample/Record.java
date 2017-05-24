@@ -16,15 +16,21 @@ public class Record {
     private final SimpleStringProperty note = new SimpleStringProperty("");
     private final SimpleStringProperty taxlot = new SimpleStringProperty("");
     private final SimpleStringProperty tdate = new SimpleStringProperty("");
+    private final SimpleStringProperty exdate = new SimpleStringProperty("");
+    private final SimpleStringProperty decdate = new SimpleStringProperty("");
+    private final SimpleStringProperty recdate = new SimpleStringProperty("");
+    private final SimpleStringProperty paydate = new SimpleStringProperty("");
 
     public Record() {
         this("", "", "", "", "", "", "",
-             "", "", "", "", "", "");
+             "", "", "", "", "", "", "",
+             "", "", "");
     }
 
     public Record(String source, String name, String symbol, String fundname, String ttype,
                   String divrate, String shares, String shprice, String tfee, String tamt,
-                  String note, String taxlot, String tdate) {
+                  String note, String taxlot, String tdate, String exdate, String decdate,
+                  String recdate, String paydate) {
         setSource(source);
         setName(name);
         setSymbol(symbol);
@@ -38,6 +44,10 @@ public class Record {
         setNote(note);
         setTaxlot(taxlot);
         setTdate(tdate);
+        setExdate(exdate);
+        setDecdate(decdate);
+        setRecdate(recdate);
+        setPaydate(paydate);
     }
 
     public String getSource() {
@@ -142,5 +152,37 @@ public class Record {
 
     public void setTdate(String v) {
         tdate.set(v);
+    }
+
+    public String getExdate() {
+        return exdate.get();
+    }
+
+    public void setExdate(String v) {
+        exdate.set(v);
+    }
+
+    public String getDecdate() {
+        return decdate.get();
+    }
+
+    public void setDecdate(String v) {
+        decdate.set(v);
+    }
+
+    public String getRecdate() {
+        return recdate.get();
+    }
+
+    public void setRecdate(String v) {
+        recdate.set(v);
+    }
+
+    public String getPaydate() {
+        return paydate.get();
+    }
+
+    public void setPaydate(String v) {
+        paydate.set(v);
     }
 }
